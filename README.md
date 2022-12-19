@@ -36,6 +36,12 @@ In another terminal tab, run the command below to access our container shell:
 docker-compose run --rm web bash
 ```
 
+Build the project assets pipeline:
+
+```sh
+./bin/dev
+```
+
 After loading up the shell, create, migrate and populate the database by running: 
 
 ```sh
