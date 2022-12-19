@@ -24,7 +24,7 @@ As of now, the application presents the following features:
 
 ## 🐳 Docker Development Environment
 
-After installing both docker and docker-compose, in the project root directory, execute to start our container:
+After installing both docker and docker-compose, in the project root directory, execute the following command to start our container:
 
 ```sh
 docker-compose up
