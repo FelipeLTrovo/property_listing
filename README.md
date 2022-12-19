@@ -1,2 +1,48 @@
-# property_listing
-Simple property listings Ruby on Rails app.
+# Properties Listing
+
+👋 Hello and welcome!
+
+A simple application for properties listings.
+
+As of now, the application presents the following features:
+
+- Lists all the registed properties.
+- Detailed view of the property where all its uploaded photos will be displayed.
+
+**:warning: Hint:** This project is configured to run under Docker.
+
+- **🛠 Docker Development Environment**
+    - :computer: [Linux Ubuntu LTS](https://ubuntu.com/download/desktop)
+    - 🐳 [Docker](https://docs.docker.com/engine/installation/)
+    - 🐳 [Docker Compose](https://docs.docker.com/compose/)
+    - **💡 Hint:** [Docker Documentation](https://docs.docker.com/)
+
+# Setup
+
+## 🐳 Docker Development Environment
+
+After installing both docker and docker-compose, in the project root directory, execute to start our container:
+
+```sh
+docker-compose up
+```
+
+In another terminal tab, run the command below to access our container shell:
+
+```sh
+docker-compose run --rm web bash
+```
+
+After loading up the shell, create, migrate and populate the database by running: 
+
+```sh
+rails db:create db:migrate db:seed
+```
+
+🚀 :clap: Finally, you can access the application by heading out to: [localhost:3000](localhost:3000)
+
+In order to run the test suite, execute the command below:
+
+```sh
+rspec
+```
