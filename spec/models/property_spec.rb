@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Property, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject { build(:property) }
+  
+  it { is_expected.to validate_presence_of(:name) }
+  it { is_expected.to have_many_attached(:photos) }
 end
