@@ -1,10 +1,11 @@
-<p style="color: green"><%= notice %></p>
 
-<%= render @property %>
+<div class="p-5">
+  <div class="max-w-lg bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><%= @property.name %></h5>
+    <%= image_tag(@property.cover_photo, class: "rounded-t-lg") unless @property.cover_photo.nil? %>
 
-<div>
-  <%= link_to "Edit this property", edit_property_path(@property) %> |
-  <%= link_to "Back to properties", properties_path %>
-
-  <%= button_to "Destroy this property", @property, method: :delete %>
+    <% @property.photos.each_with_index do |photo, index| %>
+      <%= image_tag(photo, class: "rounded-t-lg") unless index == 2 %>
+    <% end %>
+  </div>
 </div>

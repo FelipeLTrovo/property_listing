@@ -1,14 +1,11 @@
-<p style="color: green"><%= notice %></p>
+<h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+<%= @properties.count %> properties are available!
+</h1>
 
-<h1>Properties</h1>
-
-<div id="properties">
+<div class="grid grid-cols-3">
   <% @properties.each do |property| %>
-    <%= render property %>
-    <p>
-      <%= link_to "Show this property", property %>
-    </p>
+    <div class="col-span-1 my-10">
+      <%= render property %>
+    </div>
   <% end %>
 </div>
-
-<%= link_to "New property", new_property_path %>
