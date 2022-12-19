@@ -42,7 +42,7 @@ After loading up the shell, create, migrate and populate the database by running
 rails db:create db:migrate db:seed
 ```
 
-🚀 :clap: Finally, you can access the application by heading out to: [localhost:3000](localhost:3000)
+🚀 :clap: Finally, you can access the application by heading out to: [localhost:3000](http://localhost:3000)
 
 In order to run the test suite, execute the command below:
 
